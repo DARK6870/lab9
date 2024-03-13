@@ -1,0 +1,62 @@
+﻿<Window x:Class="lab7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab7"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="600" Width="800" ResizeMode="CanMinimize" Icon="/ghost_4109.png">
+    <Grid>
+        <Menu materialDesign:MenuAssist.TopLevelMenuItemHeight="25">
+            <MenuItem Header="_File">
+                <MenuItem
+      Header="Open file"
+      Icon="{materialDesign:PackIcon Kind=FileDocumentOutline}" x:Name="open_file" Click="open_file_Click"/>
+                <MenuItem
+Header="Save"
+Icon="{materialDesign:PackIcon Kind=ContentSave}" x:Name="save" Click="save_Click"/>
+                <MenuItem
+      Header="Save As..  " x:Name="Save_as" Click="Save_as_Click"/>
+                <MenuItem
+      Header="Exit"
+      Icon="{materialDesign:PackIcon Kind=ExitToApp}"
+      x:Name="close_btn" Click="close_btn_Click"/>
+            </MenuItem>
+        </Menu>
+        <Grid Margin="0, 30, 0 ,0">
+            <DataGrid CanUserDeleteRows="True" CanUserAddRows="False" IsReadOnly="True" SelectionChanged="file_data_SelectionChanged" SelectionMode="Extended" x:Name="file_data" Margin="0, 150,0,17">
+                <DataGrid.ContextMenu>
+                    <ContextMenu x:Name="rowContextMenu">
+                        <MenuItem Icon="{materialDesign:PackIcon Kind=ChartAreaspline}" Header="Create chart" x:Name="chart" Click="chart_Click"/>
+                    </ContextMenu>
+                </DataGrid.ContextMenu>
+            </DataGrid>
+            <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="" materialDesign:HintAssist.Hint="Name" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="Country" HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="" materialDesign:HintAssist.Hint="Country" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="TypeName" HorizontalAlignment="Left" Margin="150,10,0,0" TextWrapping="Wrap" Text="" materialDesign:HintAssist.Hint="TypeName" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="Price" HorizontalAlignment="Left" Margin="150,50,0,0" TextWrapping="Wrap" Text="" materialDesign:HintAssist.Hint="Price" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="ImageUrl" HorizontalAlignment="Left" Margin="290,10,0,0" TextWrapping="NoWrap" Text="" materialDesign:HintAssist.Hint="ImageUrl" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="save_btn" Click="save_btn_Click" HorizontalAlignment="Left" Margin="593,63,0,0" VerticalAlignment="Top" Background="#FF19A405" BorderBrush="#FF279003">
+                <materialDesign:PackIcon Kind="ContentSave" />
+            </Button>
+            <Button x:Name="delete_btn" Click="delete_btn_Click" HorizontalAlignment="Left" Margin="727,63,0,0" VerticalAlignment="Top"
+            Background="#FFCC4F4F" BorderBrush="#FFD04E4E">
+                <materialDesign:PackIcon Kind="Delete" />
+            </Button>
+
+            <Button x:Name="add_btn" Click="add_btn_Click" HorizontalAlignment="Left" Margin="662,63,0,0" VerticalAlignment="Top">
+                <materialDesign:PackIcon Kind="Plus" />
+            </Button>
+            <Image RenderOptions.BitmapScalingMode="HighQuality" x:Name="img" HorizontalAlignment="Left" Height="89" Margin="290,50,0,0" VerticalAlignment="Top" Width="151"/>
+
+        </Grid>
+    </Grid>
+</Window>

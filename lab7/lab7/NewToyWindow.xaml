@@ -1,0 +1,26 @@
+﻿<Window x:Class="lab7.NewToyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab7"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+TextElement.FontWeight="Regular"
+TextElement.FontSize="13"
+TextOptions.TextFormattingMode="Ideal"
+TextOptions.TextRenderingMode="Auto"
+Background="{DynamicResource MaterialDesignPaper}"
+FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="NewToyWindow" Height="400" ResizeMode="CanMinimize" Width="300">
+    <Grid>
+        <TextBox x:Name="Name" Margin="10,10,10,0" TextWrapping="Wrap" Text="" materialDesign:HintAssist.Hint="Name" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top"/>
+        <TextBox x:Name="Country" Margin="10,50,10,0" TextWrapping="Wrap" Text="" materialDesign:HintAssist.Hint="Country" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top"/>
+        <TextBox x:Name="TypeName" Margin="10,90,10,0" TextWrapping="Wrap" Text="" materialDesign:HintAssist.Hint="TypeName" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top"/>
+        <TextBox x:Name="Price" Margin="10,130,10,0" TextWrapping="Wrap" Text="" materialDesign:HintAssist.Hint="Price" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top"/>
+        <TextBox x:Name="ImageUrl" Margin="10,170,10,0" TextWrapping="NoWrap" Text="" materialDesign:HintAssist.Hint="ImageUrl" materialDesign:HintAssist.IsFloating="True" VerticalAlignment="Top"/>
+        <Button Content="Submit" Click="add_btn_Click" Margin="50,253,50,0" VerticalAlignment="Top" Background="#FF2EA504" BorderBrush="#FF2EA504"/>
+
+    </Grid>
+</Window>

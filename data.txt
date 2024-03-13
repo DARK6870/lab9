@@ -1,0 +1,7 @@
+1|Toy1|Moldova|Kid|201|https://www.chemicalsafetyfacts.org/wp-content/uploads/shutterstock_383521510-002-scaled.jpg
+2|Toy2|Moldova|F|205|https://m.media-amazon.com/images/I/81lroDEpXkL._AC_UF1000,1000_QL80_.jpg
+3|Toy3|Moldova|M|20|https://hips.hearstapps.com/hmg-prod/images/1980s-toy-lead-653ac0489f5bd.png?crop=0.490xw:0.981xh;0.255xw,0&resize=640:*
+4|Toy4|Poland|Kid|250|https://ovico.md/media/catalog/product/cache/2/image/630x/49b3216a00853856695f75be12b817bb/6/x/6x32_mt2bg_100ml.jpg
+5|Toy5|USA|M|150|https://image.smythstoys.com/original/desktop/216934.jpg
+6|Toy6|USA|F|120|https://rukminim2.flixcart.com/image/850/1000/l2urv680/stuffed-toy/8/o/f/baby-elephant-soft-toy-11-ultra-original-image3t6hfmzpdgd.jpeg?q=90&crop=false
+7|Toy7|China|F|190|https://m.media-amazon.com/images/I/51C5TrSt-GL.jpg
